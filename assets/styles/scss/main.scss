@@ -1,0 +1,13 @@
+@import './partials/reset';
+@import './partials/fonts';
+@import './partials/variables';
+@import './partials/typography';
+
+@import './partials/mixins';
+
+@import './partials/sections/header';
+@import './partials/sections/hero';
+@import './partials/sections/services';
+@import './partials/sections/products';
+@import './partials/sections/pagination';
+@import './partials/sections/footer';

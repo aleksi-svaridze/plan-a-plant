@@ -1,0 +1,108 @@
+.footer {
+   background-color: $color-blue-extra-light;
+   padding: 57px 0 146px;
+
+   &__container {
+        @include flex(flex, row, initial, space-between, initial, initial, 0, 6%);
+        position: relative;
+
+        &::after {
+            content: url(../../images/dots_icon.svg);
+            width: 154px;
+            height: 154px;
+            position: absolute;
+            top: -132px;
+            right: -85px;
+            z-index: -5;
+        }
+   }
+   &__text-content {
+        width: 47%;
+
+        &-heading {
+            font-family: $font-inter;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 58px;
+            color: $color-black;
+            margin-bottom: 30px;
+        }
+        &-desc {
+            font-size: 18px;
+            line-height: 22px;
+            color: $color-black-extra-light;
+        }
+   }
+   &__info-content {
+        width: 47%;
+        @include flex(flex, row, initial, center, initial, initial, 0, 80px);
+
+        &--contact {
+
+            &-heading {
+                text-transform: capitalize;
+                margin-bottom: 30px;
+                font-weight: 500;
+                font-size: 25px;
+                line-height: 30px;
+                color: $color-black;
+            }
+            &-link {
+                font-size: 18px;
+                line-height: 22px;
+                color: $color-black;
+                display: block;
+                margin-bottom: 28px;
+                position: relative;
+                padding-left: 40px;
+            }
+            &-link:nth-of-type(1)::before {
+                content: url(../../images/call_icon.svg);
+                width: 19.89px;
+                height: 19.93px;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+            &-link:nth-of-type(2)::before {
+                content: url(../../images/mail_icon.svg);
+                width: 18px;
+                height: 18px;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+            &-link:nth-of-type(3)::before {
+                content: url(../../images/location_icon.svg);
+                width: 18px;
+                height: 22px;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+        }
+
+        &--about {
+
+            &-heading {
+                text-transform: capitalize;
+                margin-bottom: 30px;
+                font-weight: 500;
+                font-size: 25px;
+                line-height: 30px;
+                color: $color-black;
+            }
+            &-desc {
+                display: block;
+                font-size: 18px;
+                line-height: 22px;
+                color: $color-black;
+                text-transform: capitalize;
+                margin-bottom: 18px;
+            }
+        }
+   }
+}

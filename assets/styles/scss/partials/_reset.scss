@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.website-wrapper {
+    overflow: hidden;
+}
+a:link,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+
+}
+a:active {
+
+}
+input {
+    border: none;
+}
+input:focus {
+    outline: none;
+}
