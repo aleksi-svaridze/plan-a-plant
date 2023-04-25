@@ -5,9 +5,8 @@
 
 @import './partials/mixins';
 
+@import './partials/sections/discount';
 @import './partials/sections/header';
 @import './partials/sections/hero';
-@import './partials/sections/services';
-@import './partials/sections/products';
-@import './partials/sections/pagination';
 @import './partials/sections/footer';
+@import './partials/sections/payment';
