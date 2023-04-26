@@ -1,54 +1,44 @@
 .header {
-    height: 124px;
-    // background-image: linear-gradient(
-    // rgba(252, 11, 13, .2) 17%,
-    // rgba(74, 153, 211, 0) 70%,
-    // rgba(255,255,255, .2) 3%);
-    background-image: url(../../images/header_bg_mini.png);
-    background-repeat: repeat-x;
-    background-position-y: -2px;
-    box-shadow: 0px 4px 16px rgba(75, 0, 129, 0.05);
+    background-color: $color-gray;
 
     &__container {
-        @include flex(flex, initial, center, space-between, initial, initial, 0, 0);
-        max-width: 1075px;
-        height: 100%;
-        margin: 0 auto;
+        height: 80px;
+        @include flex-row(center, space-between, initial);
     }
-
     &__logo {
-        font-family: $font-poppins;
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 60px;
-        color: $color-blue-light;
-        text-transform: capitalize;
+
+        &--img {
+            width: 133px;
+        }
     }
 
-    &__nav {
-        @include flex(flex, initial, center, space-between, initial, initial, 0, 70px);
+    &__navigation {
+        @include flex-row(center, initial, initial);
+        column-gap: 56px;
+
+        &--link {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+            color: $color-gray-dark;
+            text-transform: capitalize;
+
+            &-arrow {
+                width: 24px;
+                height: 24px;
+                background-image: url(../../../../images/arrow_icon.svg);
+                background-size: cover;
+            }
+        }
     }
 
-    &__links {
-        font-family: $font-poppins;
-        font-size: 18px;
-        line-height: 27px;
-        color: $color-black-light;
-        text-transform: capitalize;
+    &__form {
 
-        @include flex(flex, initial, center, space-between, initial, initial, 0, 7px);
+        &--input {
 
-        &::before {
-            width: 57px;
-            height: 44px;
         }
+        &--icon {
 
-        &--login::before {
-            content: url(../../images/user_icon.svg);
-        }
-
-        &--sell::before {
-            content: url(../../images/add_icon.svg);
         }
     }
 }

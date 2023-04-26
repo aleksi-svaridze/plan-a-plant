@@ -1,0 +1,31 @@
+.discount {
+    background-color: $color-green-dark;
+
+    &__container {
+        height: 40px;
+        @include flex-row(center, space-between, initial); 
+    }
+
+    &__heading {
+        line-height: 22px;
+        color: $color-yellow-light;
+        width: 100%;
+        text-align: center
+
+    }
+    &__profile {
+            @include flex-row(center, initial, initial);
+            column-gap: 56px;
+
+        &--cart {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+        &--user {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+    }
+}
