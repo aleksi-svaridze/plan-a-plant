@@ -142,4 +142,26 @@ body {
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.hero {
+  height: 320px;
+  background-image: url(../../images/hero/hero_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero__container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: initial;
+}
+.hero__heading {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 100px;
+  line-height: 136px;
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */

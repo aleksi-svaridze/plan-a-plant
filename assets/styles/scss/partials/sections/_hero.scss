@@ -1,1 +1,20 @@
-.hero {}
+.hero {
+    height: 320px;
+    background-image: url(../../images/hero/hero_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__container {
+        height: 100%;
+        @include flex-row(center, center, initial);
+    }
+
+    &__heading {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 100px;
+        line-height: 136px;
+        color: $color-white;
+    }
+}
