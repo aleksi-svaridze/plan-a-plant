@@ -164,4 +164,45 @@ body {
   font-size: 100px;
   line-height: 136px;
   color: #fff;
+}
+
+.payment {
+  background-color: #01370C;
+}
+.payment__container {
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: initial;
+  -moz-column-gap: 48px;
+       column-gap: 48px;
+}
+.payment__desc {
+  line-height: 22px;
+  color: #fff;
+}
+.payment__method {
+  display: flex;
+  align-items: center;
+  justify-content: initial;
+  flex-wrap: initial;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}
+.payment__method--visa {
+  height: 29px;
+  width: 44px;
+}
+.payment__method--mc {
+  height: 33px;
+  width: 36px;
+}
+.payment__method--amex {
+  height: 33px;
+  width: 33px;
+}
+.payment__method--rupay {
+  height: 29px;
+  width: 59px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,37 @@
+.payment {
+    background-color: $color-green-dark;
+
+    &__container {
+        height: 57px;
+        @include flex-row(center, center, initial);
+        column-gap: 48px;
+    }
+
+    &__desc {
+        line-height: 22px;
+        color: $color-white;
+    }
+
+    &__method {
+        @include flex-row(center, initial, initial);
+        column-gap: 24px;
+
+        &--visa {
+            height: 29px;
+            width: 44px;
+        }
+        &--mc {
+            height: 33px;
+            width: 36px;
+        }
+        &--amex {
+            height: 33px;
+            width: 33px;
+        }
+        &--rupay {
+            height: 29px;
+            width: 59px;
+        }
+        
+    }
+}
