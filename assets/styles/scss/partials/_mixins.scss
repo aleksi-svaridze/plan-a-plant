@@ -1,18 +1,17 @@
-// @mixin flex ($display, $dir, $align, $justify, $wrap, $content,$row-gap, $col-gap) {
-//     display: $display;
-//     flex-direction: $dir;
-//     align-items: $align;
-//     justify-content: $justify;
-//     flex-wrap: $wrap;
-//     align-content: $content;
-//     gap: $row-gap $col-gap;
-// }
-
 @mixin flex-row ($align, $justify, $wrap) {
     display: flex;
     align-items: $align;
     justify-content: $justify;
     flex-wrap: $wrap;
+}
+
+@mixin flex-col ($align, $justify, $wrap, $content) {
+    display: flex;
+    flex-direction: column;
+    align-items: $align;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+    align-content: $content;
 }
 
 @mixin clearfix {

@@ -1,1 +1,85 @@
-.footer {}
+.footer {
+    background-color: $color-green;
+    padding: 40px 0 30px;
+
+    &__container {
+        @include flex-row(initial, initial, initial);
+        column-gap: 47px;
+    }
+    &__nav {
+        @include flex-row(initial, initial, initial);
+        column-gap: 64px;
+
+        &-col {
+            @include flex-col(initial, initial, initial, initial);
+        }
+
+        &--logo {
+            height: 78px;
+            width: 259;
+        }
+
+        &-heading {
+            font-weight: 700;
+            line-height: 22px;
+            color: $color-white;
+            margin-bottom: 16px;
+        }
+
+        &-links {
+            line-height: 22px;
+            color: $color-white;
+
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    &__quality-logo {
+        width: 179px;
+        height: 160px;
+
+        &-img {
+            width: 179px;
+            height: 160px;
+        }
+    }
+    &__info {
+        @include flex-col(initial, space-between, initial, initial);
+        width: 176px;
+        height: 140px;
+
+        &--desc {
+            line-height: 22px;
+            color: $color-white;
+            padding-left: 25px;
+        }
+    }
+    &__social {
+        @include flex-row(center, initial, initial);
+        column-gap: 16px;
+
+        &--icon {
+            height: 48px;
+            width: 48px;
+            border-radius: 50%;
+            background-color: $color-green-dark;
+            @include flex-row(center, center, initial);
+
+
+            .facebook {
+                height: 18px;
+                width: 9px;
+            }
+            .twitter {
+                height: 18px;
+                width: 22px;
+            }
+            .instagram {
+                height: 24px;
+                width: 24px;
+            }
+        }
+    }
+}
