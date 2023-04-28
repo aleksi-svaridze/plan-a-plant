@@ -1,8 +1,16 @@
 .main {
     padding: 87px 0 58px;
     background-color: $color-gray;
-    
-    &__container {
 
+    &__sidebar {
+        width: 248px;
+        background-color: red;
+    }
+    &__products {
+        width: 894px;
+
+        @include flex-row(initial, initial, wrap);
+        column-gap: 24px;
+        row-gap: 22.5px;
     }
 }
