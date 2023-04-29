@@ -13,7 +13,6 @@
         row-gap: 22.5px;
     }
 }
-
 .filters {
     background: $color-gray;
     box-shadow: 0px 8px 23px rgba(80, 107, 82, 0.13);
@@ -67,6 +66,56 @@
             margin-right: 18px;
         }
     }
+    &__sub-heading {
+        text-transform: capitalize;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 150%;
+        letter-spacing: 0.022em;
+        color: $color-gray-dark;
+
+        &-wrapper {
+            padding-left: 20px;
+        }
+
+        &--list {
+            padding-left: 40px;
+            height: auto;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            transition: all .2s;
+
+            &-items {
+                display: block;
+                margin-bottom: 16px;
+                line-height: 150%;
+                letter-spacing: 0.0275em;
+                color: $color-gray-dark;
+                text-transform: capitalize;
+            }
+
+            &.toggle {
+                height: 0;
+                overflow: hidden;
+            }
+        }
+
+        &--arrow-down {
+            width: 12px;
+            height: 7.5px;
+            background-image: url(../../images/arrow_icon.svg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-right: 14px;
+            cursor: pointer;
+            transition: transform .2s;
+
+            &.toggle {
+                transform: rotate(-90deg);
+            }
+        }
+    }
 
     &__by--cat {
         padding-top: 18px;
@@ -84,6 +133,24 @@
         padding-bottom: 14px;
         border: 1px solid #E3E5E6;
     }
+}
+.show-more--btn {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.75px;
+    text-transform: capitalize;
+    color: $color-gray-dark;
+}
+.show-more--arrow {
+    width: 12px;
+    height: 7.5px;
+    background-image: url(../../images/arrow_icon.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 6px;
+    cursor: pointer;
 }
 .form__include {
     margin-top: 8px;
