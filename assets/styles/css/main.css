@@ -31,6 +31,18 @@ body {
   font-size: 16px;
 }
 
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -254,10 +266,41 @@ body {
   line-height: 150%;
   letter-spacing: 0.0275em;
   color: #343434;
+  position: relative;
+}
+.filters__heading--info {
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.018em;
+  color: #343434;
+  opacity: 0.6;
+  display: block;
+}
+.filters__heading--arrow-down {
+  width: 12px;
+  height: 7.5px;
+  background-image: url(../../images/arrow_icon.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 32px;
+  cursor: pointer;
+}
+.filters__heading--arrow-right {
+  width: 12px;
+  height: 7.5px;
+  background-image: url(../../images/arrow_icon.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: rotate(-90deg);
+  cursor: pointer;
+  margin-right: 18px;
 }
 .filters__by--cat {
   padding-top: 18px;
   padding-bottom: 18px;
+  border: 1px solid #E3E5E6;
 }
 .filters__by--include {
   padding-top: 24px;
@@ -266,6 +309,7 @@ body {
 .filters__by--price {
   padding-top: 11px;
   padding-bottom: 14px;
+  border: 1px solid #E3E5E6;
 }
 
 .form__include {
@@ -283,8 +327,38 @@ body {
   margin-bottom: 4px;
 }
 .form__include--group-input {
+  position: relative;
   width: 16px;
   height: 16px;
+}
+.form__include--group-input::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #343434;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.13);
+}
+.form__include--group-input::after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  z-index: 2;
+}
+.form__include--group-input:checked::after {
+  background-color: #343434;
+}
+.form__include--group-input:checked::before {
+  background-color: #343434;
 }
 .form__include--group-label {
   line-height: 150%;
