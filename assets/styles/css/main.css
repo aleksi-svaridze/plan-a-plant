@@ -224,7 +224,6 @@ body {
 }
 .main__sidebar {
   width: 248px;
-  background-color: red;
 }
 .main__products {
   width: 894px;
@@ -235,6 +234,62 @@ body {
   -moz-column-gap: 24px;
        column-gap: 24px;
   row-gap: 22.5px;
+}
+
+.filters {
+  background: #F0F5F0;
+  box-shadow: 0px 8px 23px rgba(80, 107, 82, 0.13);
+  border-radius: 10px;
+  width: 100%;
+  padding-left: 24px;
+}
+.filters:not(:last-child) {
+  margin-bottom: 20px;
+}
+.filters__heading {
+  text-transform: capitalize;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.0275em;
+  color: #343434;
+}
+.filters__by--cat {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.filters__by--include {
+  padding-top: 24px;
+  padding-bottom: 16px;
+}
+.filters__by--price {
+  padding-top: 11px;
+  padding-bottom: 14px;
+}
+
+.form__include {
+  margin-top: 8px;
+}
+.form__include--group {
+  display: flex;
+  align-items: center;
+  justify-content: initial;
+  flex-wrap: initial;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.form__include--group:not(:last-child) {
+  margin-bottom: 4px;
+}
+.form__include--group-input {
+  width: 16px;
+  height: 16px;
+}
+.form__include--group-label {
+  line-height: 150%;
+  letter-spacing: 0.022em;
+  color: #343434;
 }
 
 .footer {
