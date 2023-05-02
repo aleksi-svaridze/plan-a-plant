@@ -1,0 +1,33 @@
+.more-items {
+    background-color: $color-gray;
+    padding: 65px 0 111px;
+
+    &__container {
+        @include flex-row(center, center, initial);
+        column-gap: 24px;
+    }
+
+    &__heading {
+        text-transform: capitalize;
+        font-family: $font-unna;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 55px;
+        text-align: center;
+        color: $color-gray-dark;
+        position: relative;
+        margin-bottom: 45px;
+
+        &::after {
+            content: '';
+            width: 200px;
+            height: 2px;
+            background-color: rgba($color-gray-dark, .8);
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 1px;
+        }
+    }
+}

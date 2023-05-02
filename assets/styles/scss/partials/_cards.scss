@@ -1,10 +1,14 @@
-.main__card {
+.product__card {
     width: 282px;
     height: 369.5px;    
     background: $color-white;
     box-shadow: 0px 8px 23px rgba(80, 107, 82, 0.13);
     border-radius: 16px;
     padding: 20px;
+
+    &-with-discount {
+        position: relative;
+    }
 
     &--img {
         width: 242px;
@@ -21,10 +25,20 @@
     }
 
     &--price {
+        @include flex-row(center, initial, initial);
+        column-gap: 8px;
         font-size: 20px;
         line-height: 27px;
         color: $color-gray-dark;
         margin-bottom: 15px;
+
+        &-discounted {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 22px;
+            text-decoration-line: line-through;
+            color: #D11F1F;
+        }
     }
 
     &--btn {
@@ -40,5 +54,30 @@
         font-size: 20px;
         line-height: 27px;
         color: $color-white;
+    }
+}
+
+.discount__star {
+    position: absolute;
+    top: 28px;
+    right: 28px;
+    width: 64px;
+    height: 64px;
+
+    background-image: url(../../images/more-items/star.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include flex-row(center, center, initial);
+
+    &-heading {
+        font-family: $font-open;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        color: $color-white;
+
+        @include flex-col(center, center, wrap, initial);
     }
 }
