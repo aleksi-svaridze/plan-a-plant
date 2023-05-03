@@ -183,6 +183,7 @@ body {
 
 .header {
   background-color: #F0F5F0;
+  border-bottom: 1px solid #343434;
 }
 .header__container {
   height: 80px;
@@ -669,6 +670,7 @@ body {
 
 .header {
   background-color: #F0F5F0;
+  border-bottom: 1px solid #343434;
 }
 .header__container {
   height: 80px;
@@ -738,6 +740,83 @@ body {
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.review {
+  padding: 56px 0;
+  background-color: #F0F5F0;
+}
+.review__container {
+  display: flex;
+  align-items: initial;
+  justify-content: space-between;
+  flex-wrap: initial;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: initial;
+  align-content: initial;
+  row-gap: 24px;
+}
+.slider__preview {
+  width: 560px;
+  height: 421px;
+  box-shadow: 0px 8px 23px rgba(80, 107, 82, 0.13);
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slider__thumbnails {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: initial;
+}
+.slider__thumbnails-arrow {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: initial;
+}
+.slider__thumbnails-arrow::after {
+  content: url(../../images/arrow_icon.svg);
+  width: 7.5px;
+  height: 12px;
+}
+.slider__thumbnails-arrow--prev::after {
+  transform: rotate(90deg);
+}
+.slider__thumbnails-arrow--next::after {
+  transform: rotate(-90deg);
+}
+.slider__thumbnails-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: initial;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+.slider__thumbnails-container--img {
+  width: 113px;
+  height: 108px;
+  box-shadow: 0px 8px 23px rgba(80, 107, 82, 0.13);
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slider__thumbnails-container--img.active {
+  border: 4px solid #3B823E;
 }
 
 .advices {
