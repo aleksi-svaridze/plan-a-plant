@@ -134,16 +134,59 @@
         column-gap: 70px;
 
         &__quantity {
-
+            @include flex-row(center, initial, initial);
+            column-gap: 16px;
         }
         &__planter {
-
+            @include flex-row(center, initial, initial);
+            column-gap: 16px;
         }
         &__desc {
             font-size: 20px;
             line-height: 27px;
             text-transform: capitalize;
             color: $color-gray-dark;
+        }
+        &__counter {
+            @include flex-row(center, center, initial);
+            width: 86px;
+            height: 36px;
+            border: 2px solid $color-gray-dark;
+            border-radius: 4px;
+
+            & * {
+                font-size: 20px;
+                line-height: 27px;
+                color: $color-gray-dark;
+                @include flex-row(center, center, initial);
+            }
+            button {
+                width: 28px;
+                height: 28px;
+                cursor: pointer;
+            }
+            span {
+                width: 30px;
+                height: 30px;
+            }
+        }
+        &__select {
+            @include flex-row(center, center, initial);
+            column-gap: 10px;
+            width: 76px;
+            height: 36px;
+            border: 2px solid $color-gray-dark;
+            border-radius: 4px;
+
+            & span {
+                font-size: 20px;
+                line-height: 27px;
+                color: $color-gray-dark;
+            }
+            & img {
+                width: 12px;
+                height: 7.5px;
+            }
         }
     }
 

@@ -895,11 +895,76 @@ body {
   -moz-column-gap: 70px;
        column-gap: 70px;
 }
+.description .choose__quantity {
+  display: flex;
+  align-items: center;
+  justify-content: initial;
+  flex-wrap: initial;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+.description .choose__planter {
+  display: flex;
+  align-items: center;
+  justify-content: initial;
+  flex-wrap: initial;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
 .description .choose__desc {
   font-size: 20px;
   line-height: 27px;
   text-transform: capitalize;
   color: #343434;
+}
+.description .choose__counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: initial;
+  width: 86px;
+  height: 36px;
+  border: 2px solid #343434;
+  border-radius: 4px;
+}
+.description .choose__counter * {
+  font-size: 20px;
+  line-height: 27px;
+  color: #343434;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: initial;
+}
+.description .choose__counter button {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+.description .choose__counter span {
+  width: 30px;
+  height: 30px;
+}
+.description .choose__select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: initial;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  width: 76px;
+  height: 36px;
+  border: 2px solid #343434;
+  border-radius: 4px;
+}
+.description .choose__select span {
+  font-size: 20px;
+  line-height: 27px;
+  color: #343434;
+}
+.description .choose__select img {
+  width: 12px;
+  height: 7.5px;
 }
 .description .delivery__heading {
   font-weight: 600;
