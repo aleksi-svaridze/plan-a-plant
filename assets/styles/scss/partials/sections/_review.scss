@@ -3,7 +3,7 @@
     background-color: $color-gray;
 
     &__container {
-        @include flex-row(initial, space-between, initial);
+        @include flex-row(initial, initial, initial);
         column-gap: 80px;
     }
 }
@@ -27,7 +27,9 @@
         &-arrow {
             width: 24px;
             height: 24px;
+            cursor: pointer;
             @include flex-row(center, center, initial);
+
             &::after {
                 content: url(../../images/arrow_icon.svg);
                 width: 7.5px;
@@ -58,11 +60,135 @@
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: cover;
+                    transition: all .2s;
+                    cursor: pointer;
 
                     &.active {
+                        border: 4px solid $color-green-light;
+                    }
+                    &:hover {
                         border: 4px solid $color-green-light;
                     }
                 }
         }   
     }
+}
+
+.description {
+    @include flex-col(initial, initial,initial,initial);
+    row-gap: 40px;
+
+    .price {
+        &__heading {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 44px;
+            color: $color-gray-dark;
+            text-transform: capitalize;
+            margin-bottom: 8px;
+        }
+        &__amount {
+            @include flex-row(center, initial, initial);
+            column-gap: 8px;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 44px;            
+            color: $color-gray-dark;
+        }
+        &__discount {
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 33px;
+            text-decoration-line: line-through;
+
+            color: rgba(209, 31, 31, 0.5);
+        }
+        &__desc {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 27px;
+            color: rgba($color-gray-dark, 0.6);
+            margin: 16px 0 24px;
+        }
+        &__btn {
+            @include flex-row(center, center, initial);
+            width: 344px;
+            height: 64px;
+            margin-top: 24px;
+
+            background: $color-green-light;
+            box-shadow: 0px 8px 23px rgba(0, 0, 0, 0.13);
+            border-radius: 8px;
+
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 27px;
+            text-transform: capitalize;
+            color: $color-white;
+            cursor: pointer;
+        }
+    }
+
+    .choose {
+        @include flex-row(center, initial, initial);
+        column-gap: 70px;
+
+        &__quantity {
+
+        }
+        &__planter {
+
+        }
+        &__desc {
+            font-size: 20px;
+            line-height: 27px;
+            text-transform: capitalize;
+            color: $color-gray-dark;
+        }
+    }
+
+    .delivery {
+
+        &__heading {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 27px;
+            color: $color-gray-dark;
+        }
+        &__desc {
+            line-height: 22px;
+            color: rgba(52, 52, 52, 0.6);
+        }
+    }
+}
+.pincode {
+    margin: 12px 0 20px;
+    @include flex-row(center, initial, initial);
+    column-gap: 16px;
+
+    &__input {
+        width: 144px;
+        height: 36px;
+        border: 2px solid $color-gray-dark;
+        border-radius: 4px;
+        background-color: transparent;
+        padding: 8px;
+        font-size: 20px;
+        line-height: 27px;
+        color: $color-gray-dark;
+    }
+    &__btn {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 27px;
+        color: $color-green-light;
+        text-transform: uppercase;
+    }
+}
+.bordered {
+    width: 560px;
+    height: 82px;
+    padding: 8px;
+    border: 1px solid $color-gray-dark;
+    border-radius: 8px;
 }
